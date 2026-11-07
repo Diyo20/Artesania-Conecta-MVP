@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f5ed" />
+  <meta name="description" content="Artesanía Conecta: un catálogo demostrativo de productos artesanales de Lambayeque." />
+  <title>Artesanía Conecta | Catálogo demostrativo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="products.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="demo-strip">PROTOTIPO DE PRUEBA · Los productos, artesanas y precios son ficticios · WhatsApp de prueba: 933 860 919</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Artesanía Conecta, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">✺</span>
+        <span><strong>Artesanía<span class="brand-accent">Conecta</span></strong><small>Hecho a mano. Hecho con historia.</small></span>
+      </a>
+      <nav aria-label="Navegación principal"><a href="#catalogo">Catálogo</a><a href="#como-funciona">¿Cómo funciona?</a><a class="nav-cta" href="#catalogo">Explorar productos <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="inicio">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> CATÁLOGO DIGITAL ARTESANAL · MVP</div>
+        <h1 id="hero-heading">Manos que crean.<br><em>Historias que conectan.</em></h1>
+        <p>Descubre piezas artesanales y contacta directamente por WhatsApp para consultar su disponibilidad. Una propuesta para acercar la artesanía a más personas.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#catalogo">Ver catálogo <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#como-funciona">Conoce cómo funciona <span aria-hidden="true">→</span></a></div>
+        <div class="hero-meta"><span><b>06</b> productos de ejemplo</span><span class="meta-rule"></span><span><b>01</b> contacto de prueba</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de artesanía">
+        <div class="art-sun"></div><div class="art-arch"><div class="art-vase"><div class="vase-neck"></div><div class="vase-body"></div><div class="vase-line line-a"></div><div class="vase-line line-b"></div><div class="vase-line line-c"></div></div><div class="art-leaf leaf-one">❧</div><div class="art-leaf leaf-two">❧</div></div>
+        <div class="art-stamp">ARTE<br>LOCAL<br><span>✦</span></div><span class="art-caption">Tradición que inspira</span>
+      </div>
+    </section>
+    <section class="catalogue-section" id="catalogo" aria-labelledby="catalogo-heading">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-kicker">COLECCIÓN DE MUESTRA</span><h2 id="catalogo-heading">Explora el catálogo</h2><p>Una primera versión para probar la búsqueda, los productos y el contacto por WhatsApp.</p></div><div class="results-badge" id="counter" aria-live="polite">6 productos</div></div>
+        <div class="filters"><label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Buscar artesanías, materiales..." autocomplete="off" aria-label="Buscar productos" /></label><div id="categoryFilters" class="category-filters" role="group" aria-label="Filtrar por categoría"></div></div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>No encontramos productos</h3><p>Prueba otra búsqueda o categoría.</p><button class="button button-secondary" id="clearFilters">Mostrar todos</button></div>
+      </div>
+    </section>
+    <section class="how-section container" id="como-funciona"><div class="how-intro"><span class="section-kicker">SIMPLE Y DIRECTO</span><h2>De la vitrina a la conversación.</h2><p>Este MVP no procesa pagos ni pedidos. La coordinación de cada compra se realiza por WhatsApp.</p></div><div class="steps"><article><span class="step-no">01</span><h3>Explora</h3><p>Busca productos por nombre o categoría.</p></article><article><span class="step-no">02</span><h3>Elige</h3><p>Revisa descripción, precio referencial y artesana.</p></article><article><span class="step-no">03</span><h3>Consulta</h3><p>Abre WhatsApp con el producto incluido en el mensaje.</p></article></div></section>
+    <section class="note-section container"><div class="note-icon" aria-hidden="true">ⓘ</div><div><strong>Esta es una demostración, no una tienda operativa.</strong><p>Las imágenes son ilustraciones, los nombres y los precios son ficticios. Antes de publicar un catálogo real, entrevistaremos a las artesanas y solicitaremos autorización para utilizar fotos y contactos.</p></div></section>
+  </main>
+  <footer><div class="container footer-inner"><div><strong>✺ ArtesaníaConecta</strong><p>Prototipo para Match & Build Challenge · 2026</p></div><span>Diseñado para validarse con artesanas reales.</span></div></footer>
+  <dialog id="detailDialog" aria-labelledby="modalTitle"><div id="modalContent"></div></dialog>
+</body>
+</html>
