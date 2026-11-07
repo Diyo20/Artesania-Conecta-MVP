@@ -5,9 +5,9 @@ window.ARTESANIA_CONFIG = {
 };
 
 window.ARTESANIA_ARTESANAS = [
-  { id: "a1", nombre: "Diyo Cajusol Mendoza", whatsapp: 933860919 },
-  { id: "a2", nombre: "Jazmin Carrillo Cumpa", whatsapp: 903381537 },
-  { id: "a3", nombre: "Eduardo Rodriguez Neciosup", whatsapp: 931958374 },
+  { id: "a1", nombre: "Diyo Cajusol Mendoza", whatsapp: "51933860919" },
+  { id: "a2", nombre: "Jazmin Carrillo Cumpa", whatsapp: "51903381537" },
+  { id: "a3", nombre: "Eduardo Rodriguez Neciosup", whatsapp: "51931958374" },
 ];
 
 window.ARTESANIA_PRODUCTOS = [
